@@ -1,0 +1,121 @@
+/* hero section code */
+.hero {
+  background-image: url("/assets/features/about.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* creative jorney code*/
+.creative-journey {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    overflow: none !important;
+}
+
+.creative-journey .content, .creative-journey .image {
+    flex: 1 0 100%;
+}
+
+.creative-journey .content {
+    order: 1;
+    background-color: #ff4500;
+    color: #f6e58d;
+}
+
+.creative-journey .image {
+    order: 2;
+}
+.content p{
+    padding: 20px;
+}
+.content:hover{
+    background-color: #f6e58d;
+    color: #ff4500;
+}
+.content h3{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.heading {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #ff4500;
+    color: #f6e58d;
+    border-bottom: 1px solid #f6e58d;
+}
+
+@media (min-width: 768px) {
+    .creative-journey .content, .creative-journey .image {
+        flex: 1 0 50%;
+    }
+
+    .creative-journey .content {
+        order: 1;
+    }
+
+    .creative-journey .image {
+        order: 2;
+    }
+}
+
+.image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* work experice code */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    text-align: center;
+    font-family: arial;
+    flex: 1 0 calc(33.33% - 2em); 
+    background-color: #ff4500;
+    color: #f6e58d;
+    padding: 5px;
+}
+
+.card:hover{
+    background-color: #f6e58d;
+    color: #ff4500;
+}
+
+.card img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+
+.card h3, .card p {
+    transition: color 0.5s ease;
+}
+
+.card:hover h3, .card:hover p {
+    color: #ff6347;
+    background-color: #f6e58d;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 0 100%; 
+    }
+}
